@@ -1,7 +1,5 @@
 name: CI
-
-run-name: "CI by 24f1002007@ds.study.iitm.ac.in (${{ github.actor }})"  # Dynamic!
-# Add this line!
+run-name: 24f1002007@ds.study.iitm.ac.in CI ${{ github.run_number }}
 
 on:
   push:
@@ -15,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: echo "Tests passed!"
+    - run: echo "Tests passed by 24f1002007@ds.study.iitm.ac.in"
